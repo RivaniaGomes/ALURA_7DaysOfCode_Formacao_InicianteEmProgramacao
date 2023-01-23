@@ -1,20 +1,115 @@
+* {
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("background.jpg");
+  background-position: center;
+  background-size: auto;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 950px;
+  margin: 3rem auto;
+  background-color: rgb(182, 213, 241);
+  padding: 1.5rem;
+  border-radius: 5px;
+  width: 80%;
+}
+
 div {
   margin-bottom: 10px;
   position: relative;
+}
+
+fieldset {
+  width: 97%;
+  line-height: 30px;
+  border-radius: 5px;
+  border: 2px solid darkslateblue;
+  background-color: aliceblue;
+}
+
+legend {
+  color: darkslategrey;
+  font-weight: bold;
+}
+
+#dados-pessoais > input {
+  width: 29%;
+}
+
+label {
+  color: green;
+  font-style: italic;
+}
+
+input {
+  margin: 0 0 0 5px;
+  padding: 2px 5px 2px 5px;
+  border: 2px dotted darkslateblue;
 }
 
 input + span {
   padding-right: 30px;
 }
 
+#idade,
+#nome,
+#linguagem {
+  background-color: #e8f0fe;
+}
+
+#linguagem {
+  width: 97%;
+}
+
 input:invalid + span::after {
   position: absolute;
   content: "✖";
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 input:valid + span::after {
   position: absolute;
   content: "✓";
-  padding-left: 5px;
+  padding-left: 10px;
+}
+
+div > button {
+  margin: 10px 0 0 15px;
+  padding: 5px 0 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  border: 2px solid black;
+  background-color: darkblue;
+  color: aliceblue;
+  border-radius: 500px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: coral;
+  transition: all 0.5s;
+  color: black;
+  font-weight: bold;
+}
+
+#demo {
+  text-shadow: #fc0 1px 0 10px;
+  color: darkslateblue;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
 }
